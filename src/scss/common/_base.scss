@@ -1,0 +1,83 @@
+:root {
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  color: $_main_color;
+  background: $_main_bg_color;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @include media(desktop) {
+    max-width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+
+.section {
+  scroll-margin-top: 50px;
+
+  @include media(desktop) {
+    scroll-margin-top: 60px;
+  }
+}
+
+.section-title {
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  text-transform: uppercase;
+  text-align: right;
+  color: #1e1e1e;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 0.875;
+    margin-bottom: 32px;
+  }
+}
+
+.section-subtitle {
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-align: center;
+  color: #ce2200;
+  margin-bottom: 12px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    margin-bottom: 32px;
+  }
+}
