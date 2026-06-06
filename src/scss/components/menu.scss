@@ -1,7 +1,7 @@
 .context-menu {
   display: none;
-  background: #def5fd;
-  padding: 74px 60px 74px;
+  background: #f3ffe1;
+  padding: 30px 15px 48px;
   max-width: 375px;
   width: 100%;
   margin: 0 auto;
@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   align-items: start;
-  gap: 32px;
+  gap: 14px;
 }
 
 .context-list-item {
@@ -29,11 +29,11 @@
 }
 
 .context-list-link {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.875;
-  color: #03396c;
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #ce2200;
   transition:
     color 0.3s ease-in-out,
     opacity 0.3s ease-in-out,

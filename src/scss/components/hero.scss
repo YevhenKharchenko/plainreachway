@@ -1,25 +1,23 @@
 .hero-section {
-  background: linear-gradient(180deg, #85e1ff 0%, #209cd4 100%);
-
   @include media(desktop) {
   }
 }
 
 .hero-bg-wrapper {
-  padding-top: 100px;
-  padding-bottom: 240px;
+  padding-top: 88px;
+  padding-bottom: 172px;
   max-width: 375px;
   margin: 0 auto;
-  background-image: url(../img/hero/hero-bg-mob.png);
+  background-image: url(../img/hero/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: bottom center;
   background-size: auto;
 
   @include media(desktop) {
-    padding-top: 180px;
-    padding-bottom: 324px;
+    padding-top: 114px;
+    padding-bottom: 162px;
     max-width: 1440px;
-    background-image: url(../img/hero/hero-bg-desk.png);
+    background-image: url(../img/hero/hero-bg-desk.jpg);
   }
 }
 
@@ -35,57 +33,64 @@
 
 .hero-text-wrapper {
   @include media(desktop) {
-    max-width: 685px;
+    max-width: 847px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
 .hero-title {
-  font-family: 'Jomhuria', sans-serif;
-  font-weight: 400;
-  font-size: 102px;
-  line-height: 0.70588;
-  text-align: center;
-  color: #03396c;
-  margin-bottom: 12px;
-
-  @include media(desktop) {
-    font-size: 120px;
-    line-height: 1;
-  }
-}
-
-.hero-subtitle {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  color: #03396c;
-  margin-bottom: 12px;
+  font-size: 24px;
+  line-height: 1.16667;
+  text-transform: uppercase;
+  text-align: right;
+  color: #1e1e1e;
+  max-width: 292px;
+  margin-left: auto;
+  margin-bottom: 27px;
 
   @include media(desktop) {
-    text-align: left;
-  }
-}
-
-.hero-text-container {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-
-  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.125;
+    max-width: 847px;
   }
 }
 
 .hero-text {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  text-align: center;
-  color: #03396c;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-transform: uppercase;
+  text-align: right;
+  color: #1e1e1e;
+  max-width: 235px;
+  margin-left: auto;
+  margin-bottom: 27px;
 
   @include media(desktop) {
-    text-align: left;
+    font-size: 24px;
+    line-height: 1.33333;
+    max-width: 847px;
+  }
+}
+
+.hero-subtitle {
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.16667;
+  text-transform: uppercase;
+  text-align: right;
+  color: #f3ffe1;
+  margin-left: auto;
+  max-width: 264px;
+
+  @include media(desktop) {
+    font-size: 32px;
+    line-height: 1.125;
+    max-width: 464px;
   }
 }

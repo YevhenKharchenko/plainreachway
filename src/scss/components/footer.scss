@@ -1,31 +1,23 @@
 .footer {
-  background: linear-gradient(180deg, #85e1ff 0%, #209cd4 100%);
-
   @include media(desktop) {
   }
 }
 
 .footer-bg-wrapper {
-  padding-top: 36px;
-  padding-bottom: 36px;
+  padding-top: 45px;
+  padding-bottom: 45px;
   max-width: 375px;
   margin: 0 auto;
-  background-image: url(../img/footer/footer-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
 
   @include media(desktop) {
+    padding-top: 64px;
+    padding-bottom: 64px;
     max-width: 1440px;
-    background-image: url(../img/footer/footer-bg-desk.png);
   }
 }
 
 .footer-container {
-  padding: 0 12px;
-
   @include media(desktop) {
-    padding: 0 100px;
   }
 }
 
@@ -35,10 +27,9 @@
 }
 
 .footer-nav {
-  margin-bottom: 22px;
+  margin-bottom: 30px;
 
   @include media(desktop) {
-    margin-bottom: 50px;
   }
 }
 
@@ -46,12 +37,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 8px;
+  gap: 24px;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 32px;
   }
 }
 
@@ -65,26 +53,51 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 24px;
+  line-height: 1.16667;
+  text-transform: uppercase;
+  text-align: right;
+  color: #1e1e1e;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-contact-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.125;
+  text-transform: uppercase;
   text-align: center;
-  color: #03396c;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+  }
+}
+
+.footer-span {
+  color: #ce2200;
 
   @include media(desktop) {
   }
 }
 
 .footer-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 2.33333;
+  text-transform: uppercase;
   text-align: center;
-  color: #03396c;
+  color: #ce2200;
 
   @include media(desktop) {
-    text-align: right;
   }
 }
