@@ -1,29 +1,33 @@
-import sprite from '../img/sprite.svg';
+import Swiper from 'swiper';
+import 'swiper/css/bundle';
 
-const faqBtns = document.querySelectorAll('.faq-top-text-btn');
-faqBtns.forEach(btn => btn.addEventListener('click', onBtnClick));
+let faqSwiper;
 
-function onBtnClick(e) {
-  const faqTop = e.currentTarget;
-  const faqContainer = faqTop.closest('.faq-list-item');
-  const bottomText = faqContainer.querySelector('.faq-bottom-text');
-  const iconUse = faqTop.querySelector('use');
+faqSwiper = new Swiper('.faq-swiper-container', {
+  direction: 'horizontal',
+  loop: false,
+  centeredSlides: true,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
+  initialSlide: 0,
+  spaceBetween: 12,
+  speed: 500,
+  allowTouchMove: true,
+  grabCursor: true,
+  watchOverflow: true,
+  breakpoints: {
+    1440: {
+      centeredSlides: false,
+      slidesPerView: 6,
+      spaceBetween: 0,
+      allowTouchMove: false,
+      grabCursor: false,
+    },
+  },
 
-  document.querySelectorAll('.faq-list-item').forEach(item => {
-    if (item !== faqContainer) {
-      item.classList.remove('faq-open');
-      item.querySelector('.faq-bottom-text').classList.remove('is-visible');
-      item.querySelector('use').setAttribute('href', `${sprite}#icon-plus`);
-    }
-  });
-
-  bottomText.classList.toggle('is-visible');
-
-  if (bottomText.classList.contains('is-visible')) {
-    faqContainer.classList.add('faq-open');
-    iconUse.setAttribute('href', `${sprite}#icon-minus`);
-  } else {
-    faqContainer.classList.remove('faq-open');
-    iconUse.setAttribute('href', `${sprite}#icon-plus`);
-  }
-}
+  on: {
+    init(swiper) {
+      document.querySelector('.faq-swiper-container').classList.add('show');
+    },
+  },
+});

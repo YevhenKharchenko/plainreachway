@@ -4,21 +4,14 @@
 }
 
 .progress-section-wrapper {
-  padding-top: 40px;
-  padding-bottom: 300px;
+  padding-top: 32px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/progress/progress-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: auto;
 
   @include media(desktop) {
-    padding-top: 100px;
-    padding-bottom: 388px;
+    padding-top: 84px;
     max-width: 1440px;
-    background-image: url(../img/progress/progress-bg-desk.png);
   }
 }
 
@@ -27,67 +20,127 @@
   }
 }
 
+.progress-content-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @include media(desktop) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.progress-text-wrapper {
+  @include media(desktop) {
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
 .progress-title {
   @include media(desktop) {
-    text-align: center;
+  }
+}
+
+.progress-subtitle {
+  @include media(desktop) {
+    text-align: left;
+  }
+}
+
+.features-top-text {
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-align: center;
+  color: #1e1e1e;
+  margin-bottom: 24px;
+
+  @include media(desktop) {
+    font-size: 24px;
+    text-align: left;
   }
 }
 
 .progress-list {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 22px;
+  gap: 12px;
+  width: 100%;
+  max-width: 262px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 24px;
 
   @include media(desktop) {
-    flex-direction: row;
-    justify-content: center;
+    max-width: max-content;
+    margin: 0;
+    margin-bottom: 24px;
   }
 }
 
 .progress-list-item {
-  background: #fff;
-  border-radius: 22px;
-  padding: 12px;
-  width: 100%;
-  max-width: 343px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 
   @include media(desktop) {
-    max-width: 400px;
   }
 }
 
-.progress-item-title {
-  font-family: 'Kanit', sans-serif;
+.progress-img {
+  min-width: 29px;
+
+  @include media(desktop) {
+  }
+}
+
+.progress-item-text {
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.16667;
+  text-transform: uppercase;
   text-align: center;
-  color: #03396c;
-  margin-bottom: 12px;
+  color: #1e1e1e;
 
   @include media(desktop) {
+    font-size: 24px;
+    line-height: 0.58333;
   }
 }
 
-.progress-item-features-list {
-  @include media(desktop) {
-  }
-}
-
-.progress-features-list-item {
-  @include media(desktop) {
-  }
-}
-
-.progress-features-item-text {
-  font-family: 'Kanit', sans-serif;
+.progress-bottom-text {
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 12px;
+  line-height: 1.16667;
   text-align: center;
-  color: #03396c;
+  color: #1e1e1e;
 
   @include media(desktop) {
+    font-size: 24px;
+    text-align: left;
+  }
+}
+
+.progress-bg-img {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 55px;
+
+  @include media(desktop) {
+    margin: 0;
+    display: none;
+  }
+}
+
+.progress-br {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
   }
 }

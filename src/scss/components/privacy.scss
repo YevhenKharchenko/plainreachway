@@ -1,5 +1,5 @@
 .policy-section {
-  background: #def5fd;
+  background: #f3ffe1;
 
   @include media(desktop) {
   }
@@ -11,43 +11,37 @@
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/policy/policy-bg-mob.png);
-  background-repeat: no-repeat;
-  background-position: top center;
-  background-size: auto;
 
   @include media(desktop) {
     padding-top: 140px;
     padding-bottom: 100px;
     max-width: 1440px;
-    background-image: url(../img/policy/policy-bg-desk.png);
-    background-position: top right;
   }
 }
 
 .policy-main-title {
-  font-family: 'Jomhuria', sans-serif;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 0.80769;
-  text-align: center;
-  color: #03396c;
+  font-family: 'Iosevka Charon Mono', sans-serif;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 0.875;
+  text-transform: uppercase;
+  color: #1e1e1e;
   margin-bottom: 30px;
 
   @include media(desktop) {
     text-align: left;
-    font-size: 92px;
-    line-height: 0.69565;
+    font-size: 32px;
+    line-height: 0.875;
     margin-bottom: 50px;
   }
 }
 
 .policy-title {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #ce2200;
   margin-bottom: 16px;
 
   @include media(desktop) {
@@ -55,11 +49,11 @@
 }
 
 .policy-text {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #1e1e1e;
 
   &:not(:last-child) {
     margin-bottom: 16px;
@@ -75,11 +69,11 @@
 }
 
 .policy-item {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 1.55556;
-  color: #03396c;
+  font-size: 20px;
+  line-height: 1.2;
+  color: #1e1e1e;
 
   &:last-child {
     margin-bottom: 16px;

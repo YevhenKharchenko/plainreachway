@@ -4,19 +4,16 @@
 }
 
 .gameplay-section-wrapper {
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 27px;
+  padding-bottom: 13px;
   max-width: 375px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/gameplay/gameplay-bg-mob.jpg);
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-size: cover;
 
   @include media(desktop) {
+    padding-top: 84px;
+    padding-bottom: 0;
     max-width: 1440px;
-    background-image: url(../img/gameplay/gameplay-bg-desk.jpg);
   }
 }
 
@@ -30,53 +27,45 @@
   }
 }
 
-.gameplay-list-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #03396c;
-  margin-bottom: 12px;
-
-  @include media(desktop) {
-  }
-}
-
 .gameplay-list {
-  list-style-type: disc;
-  padding-left: 30px;
-  color: #03396c;
   display: flex;
   flex-direction: column;
-  margin-bottom: 22px;
+  gap: 12px;
+  width: 100%;
+  max-width: 309px;
+  margin-left: auto;
+  margin-right: auto;
 
   @include media(desktop) {
+    max-width: 856px;
   }
 }
 
 .gameplay-list-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  @include media(desktop) {
+  }
+}
+
+.gameplay-img {
+  min-width: 38px;
+
   @include media(desktop) {
   }
 }
 
 .gameplay-item-text {
-  font-family: 'Kanit', sans-serif;
+  font-family: 'Iosevka Charon Mono', sans-serif;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #03396c;
+  font-size: 12px;
+  line-height: 1.16667;
+  color: #1e1e1e;
 
   @include media(desktop) {
-  }
-}
-
-.gameplay-bottom-text {
-  font-family: 'Kanit', sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.4;
-  color: #03396c;
-
-  @include media(desktop) {
+    font-size: 24px;
+    line-height: 0.58333;
   }
 }
